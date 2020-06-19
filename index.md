@@ -1,37 +1,202 @@
-## Welcome to GitHub Pages
+## Code for Research Administration
 
-You can use the [editor on GitHub](https://github.com/c4ra/c4ra.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Code for RA (C4RA)とは
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### 活動の趣旨
 
-### Markdown
+リサーチ・アドミニストレーター(RA)の業務は多岐にわたりますが、テクノロジーを活用する事により効率化や問題解決が期待できるものは多いと考えます。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+テクノロジーを活用して自分たちの身のまわりの課題を自分たちで解決していくcivic techの取組みを参考にし、全国各地に散らばるRAによるデータ分析のノウハウ共有やツール開発を行っていきます。
 
-```markdown
-Syntax highlighted code block
+#### 参加方法
 
-# Header 1
-## Header 2
-### Header 3
+SlackとMLで情報共有しています。招待のメールをお送りしますので、hirai アットマーク adm.niigata-u.ac.jp まで、お気軽にどうぞ。
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### ツール開発
 
-**Bold** and _Italic_ and `Code` text
+GitHubにCode for RAの[Organizationアカウント](https://github.com/c4ra)上で共同で開発しています。また、C4RAメンバーのGitHubの個人アカウントもここで紹介します。
 
-[Link](url) and ![Image](src)
-```
+#### KAKEN関係
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+KAKENデータベースからダウンロードできる採択課題データ（csv形式）を用いた科研費分析ツールです。 機関別、審査区分別、研究種目別の特徴等をつかむことができます。 Rで書かれています。
 
-### Jekyll Themes
+https://github.com/TakuyaK0625/KAKEN.App 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/c4ra/c4ra.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+※C4RAメンバーの久保さんのGitHubリポジトリです。
 
-### Support or Contact
+---
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+科学研究費助成事業データベース(KAKEN)からXML形式で研究課題データをまるごとダウンロードして、科研費獲得実績として研究力分析に使いそうなデータを抽出し、正規化したテーブルとしてローカルのMariaDBに保存するプログラムです。
+
+https://github.com/c4ra/kaken_parse_grants_masterxml
+
+
+
+ローカルのデータベースからPythonのデータ分析ライブラリPandasを用いた集計・分析の例も公開しています。
+
+https://github.com/c4ra/kaken_aggregate
+
+※C4RAのOrganizationアカウントのリポジトリ上で、メンバー共同で開発しています。GPLライセンスのオープンソースのコードとして公開していますので、C4RAメンバーでなくても自由に使うことができます。C4RAメンバーの方には、Organizationアカウントのリポジトリにコミットする権限を持つことができます。
+
+---
+
+科研費の採択状況を研究機関間で比較する分析ツールを、新潟大学に置いています（PHPです）。Pythonに移植したので、ひとまずローカルで動かすためのコードを公開します。
+
+https://github.com/hiraikatsuyuki/kaken5
+
+※C4RAメンバーの平井のGitHubリポジトリです。
+
+---
+
+#### 書誌メトリクス分析関係
+
+SciValで作成した任意の文献集合リストから著者リストを作成し、著者の専門分野リストを作成します。
+
+https://github.com/mackeykura/AuthorProfile_fromScopus
+
+異分野共著かどうかを判断するプログラムです。
+
+https://github.com/mackeykura/idp_collaboration
+
+※C4RAメンバーの岡崎さんのGitHubリポジトリです。
+
+---
+
+Scopusからエクスポートしたファイルから国際共著論文の数・割合を計算します。
+
+https://github.com/okutsu-saeko/so/blob/master/InternationalResearchPapers.ipynb
+
+※C4RAメンバーの奥津さんのGitHubリポジトリです。
+
+#### 大学ランキング分析関係
+
+THE (Times Higher Education)世界大学ランキング日本版に関するデータの可視化事例です。Rで書かれています。
+
+https://github.com/TakuyaK0625/Rankings
+
+※C4RAメンバーの久保さんのGitHubリポジトリです。
+
+### ミーティングやイベントへの参加
+
+#### 【終了】研究大学コンソーシアム研究力強化人材育成ワークショップ（第2回）「EBPMに資するエビデンス収集と活用」 Code for Research Administrationの取組みについて
+
+発表者：平井克之、奥津佐恵子
+
+日程：2020年2月19日（水）13:30-17:00
+
+場所：AP虎ノ門 I+J会議室（東京都港区）
+
+[投影した資料](https://figshare.com/articles/Code_for_Research_Administration__/11901726/1)は、figshareにCC-BYライセンスで公開しています。
+
+#### 【終了】リサーチ・アドミニストレーター協議会 第5回年次大会 参加者ネットワーキングセッション プログラミングによるデータ分析の生産性向上 ― Code for Research Administration
+
+オーガナイザー：矢吹命大
+
+日程：2019年9月3日（火）15:50-17:20
+
+場所：電気通信大学（東京都調布市）
+
+詳細は [RA協議会第5回年次大会](http://www.rman.jp/meetings2019/) からどうぞ。ご参加いただき、ありがとうございました。
+
+#### 【終了】リサーチ・アドミニストレーター協議会 第4回年次大会 参加者ネットワーキングセッション
+プログラミングによるデータ分析の生産性向上 ― Code for Research Administration
+
+オーガナイザー：平井克之、奥津佐恵子、渡邉優香
+
+日時：2018年9月20日（木）13:50-15:20 
+
+場所：神戸国際会議場（兵庫県神戸市）
+
+詳細は [RA協議会第4回年次大会](http://www.rman.jp/meetings2018/) からどうぞ。多くの方にご参加いただき、ありがとうございました。
+
+次のファイルをfigshareにCC-BYライセンスで公開しています。
+
+- [オープニングで使った概要説明スライド](https://figshare.com/articles/_________Code_for_Research_Administration/7127771)
+- [ポスター発表のPDFファイル](https://figshare.com/articles/____________Code_for_Research_Administration_/7245947/1)
+
+#### 【終了】Code4Lib JAPANカンファレンス2018
+リサーチ・アドミニストレーターによるデータ分析コミュニティCode for RAと図書館との関わり
+
+発表者：平井克之、上坂明子、堤良恵
+
+日時：2018年9月1日（土）16:15～17:15
+
+場所：県立長野図書館 （長野県長野市）
+
+詳細は [Code4Lib JAPANカンファレンス2018 - 発表プログラム](http://wiki.code4lib.jp/wiki/C4ljp2018/program) からどうぞ。
+
+Code for RAは、Code4Lib JAPANに敬意を表して名前を付けた経緯もあります。[投影した資料](https://figshare.com/articles/___________Code_for_RA____/7041644)は、figshareにCC-BYで置きました。大学やURAと接点の少ない公共図書館のライブラリアンにも分かるように、という目線で作ったものです。
+
+
+### メンバー
+- 伊神 正貫（科学技術・学術政策研究所）
+- 池内 健太（経済産業研究所）
+- 池谷 瑠絵（情報・システム研究機構）
+- 石田 貴美子（同志社大学）
+- 井芹 俊太郎（法政大学）
+- 岩崎 琢哉（大阪大学）
+- 上坂 明子（一橋大学）
+- 大谷 周平（琉球大学）
+- 岡﨑 麻紀子（京都大学）
+- 岡田 直資（北海道大学）
+- 荻 多加之（福島大学）
+- 奥津 佐恵子（名古屋市立大学）
+- 押海 圭一（琉球大学）
+- 梶野 顕明（茨城大学）
+- 金築 拓也（株式会社バイオインパクト） 
+- 壁谷 如洋（自然科学研究機構）
+- 神谷 美穂（分子科学研究所）
+- 河上 寛（福井大学）
+- 國政 歩美（大阪大学）
+- 久保 琢也（信州大学）
+- 久間木 寧子（新潟大学）
+- 蔵川 圭（国立情報学研究所）
+- 栗村 朋（東京工業大学）
+- 小沼 三佳（宇宙科学研究所） 
+- 小俣 友輝（北海道大学）
+- 佐藤 智哉（金沢大学）
+- 佐野 恵利子（情報・システム研究機構） 
+- Jason M. Sanderson（熊本大学）
+- 白木 達也（大阪市立大学）
+- 新道 真代（筑波大学）
+- 鈴木 紀子（京都産業大学）
+- 高橋 陽介（株式会社アトラス）
+- 堤 良恵（名古屋大学）
+- 常川 真央（千葉大学）
+- 東野 陽子（東京大学）
+- 藤山 泰成（熊本大学）
+- 利光 哲哉（岐阜大学）
+- 永井 博昭（群馬大学） 
+- 中島 聡（奈良先端科学技術大学院大学）
+- 西田 泰士（大阪府立大学）
+- 野上 識（東京大学）
+- 浜手 雄一郎（沖縄科学技術大学院大学）
+- 林 雅子（広島大学）
+- 東 昭孝（金沢大学）
+- 平井 克之（新潟大学）
+- 開本 亮（京都高度技術研究所）
+- 比留川 治子（順天堂大学）
+- 福田 直子（熊本大学）
+- 藤井 弘樹（電気通信大学） 
+- 本間 紀美（東京工業大学）
+- Marc Hansen（東北大学）
+- 松浦 孝範（高知大学）
+- 松本 匡史（岡山大学）
+- 三好 明子（熊本大学）
+- 森 雅生（東京工業大学）
+- 安川 美智子（群馬大学）
+- 矢吹 命大（横浜国立大学）
+- 山咲 博昭（広島市立大学） 
+- 山下 瞳（総合地球環境学研究所）
+- 湯越 智子（東京大学）
+- 湯澤 陽子（順天堂大学）
+- 横田 秀和（東海大学）
+- 横山 明徳（早稲田大学） 
+- 若松 永憲（総合地球環境学研究所）
+- 渡邉 優香（九州大学）
+- 渡沼 玲史（長崎大学）
+
+五十音順／2020年5月現在
+
+記載漏れや所属の変更などありましたら、SlackかMLでお知らせください。
