@@ -3,3 +3,8 @@ pages_list:
   About: ""
   Archive: ""
   Feed: ""
+  
+menu:
+    Home:
+    Archives:
+    About:
