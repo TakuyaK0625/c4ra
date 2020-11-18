@@ -1,6 +1,17 @@
 theme: minima
-pages  : 
-  - Ruby-research
-  - bundle-usage
-  - github-pages-debug
-  - github-pages-generator
+menu:
+  home: /
+  archives: /archives
+  #about: /about
+  #categories: /categories
+  tags: /tags
+  #commonweal: /404.html
+  
+menu_icons:
+  enable: true
+  # Icon Mapping.
+  home: home
+  about: user
+  categories: th
+  tags: tags
+  archives: archive
