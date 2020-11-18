@@ -1,5 +1,6 @@
 theme: minima
-menu:
-    Home:
-    Archives:
-    About:
+pages  : 
+  - Ruby-research
+  - bundle-usage
+  - github-pages-debug
+  - github-pages-generator
