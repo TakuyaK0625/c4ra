@@ -7,4 +7,4 @@ title: My Website
 author: Some Person
 
 header_pages:
-  - README.md
+  - About: README.md
