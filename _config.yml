@@ -1,4 +1,11 @@
 title: C4RA
 theme: minima
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - TEST.md
 header_pages:
   - About: TEST.md
