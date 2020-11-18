@@ -1,17 +1,9 @@
 theme: minima
-menu:
-  home: /
-  archives: /archives
-  #about: /about
-  #categories: /categories
-  tags: /tags
-  #commonweal: /404.html
-  
-menu_icons:
-  enable: true
-  # Icon Mapping.
-  home: home
-  about: user
-  categories: th
-  tags: tags
-  archives: archive
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - CONTRIBUTING.md
+  - README.md
