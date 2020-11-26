@@ -1,2 +1,6 @@
 minima:
   skin: dark
+
+header_pages:
+  - Test.md
+  - portfolio.md
