@@ -2,5 +2,5 @@ minima:
   skin: dark
 
 header_pages:
-  - Test.md
+  - TEST.md
   - portfolio.md
